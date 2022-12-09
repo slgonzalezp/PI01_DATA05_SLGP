@@ -95,28 +95,3 @@ class ModelETL:
         print("Valores nulos:\n", original_df.isnull().sum(), "\nRegistros totales:\n", original_df.count())
         print("Datos limpios:\n")
         print("Valores nulos:\n", clean_df.isnull().sum(), "\nRegistros totales:\n", clean_df.count())
-
-
-
-'''
-    df_amazon_clean = df_amazon.dropna().copy()
-    df_disney_clean = df_disney.dropna().copy()
-    df_netflix_clean = df_netflix.dropna().copy()
-
-    df_hulu.isnull().sum()
-    df_hulu.count()
-
-    show_data_specs(df_amazon, df_amazon_clean)
-    show_data_specs(df_disney, df_disney_clean)
-    show_data_specs(df_hulu, df_hulu_clean)
-    show_data_specs(df_netflix, df_netflix_clean)
-
-    missing_values(df_netflix_clean)
-    missing_values(df_amazon_clean)
-    missing_values(df_amazon)
-    missing_values(df_hulu)
-
-    df_film_score = pd.concat([df_hulu.show_id, df_hulu.director, df_hulu.cast, df_hulu.country], axis=1)
-    df_film_scoreDisney = pd.concat([df_disney.show_id, df_disney.director, df_disney.cast, df_disney.country], axis=1)
-    df_film_scoreNetflix = pd.concat([df_disney.show_id, df_disney.director, df_disney.cast, df_disney.country], axis=1)
-'''
